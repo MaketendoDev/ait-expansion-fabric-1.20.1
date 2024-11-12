@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.maketendo.ait_expansion.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ait-expansion",
+	"version": "${version}",
+	"name": "AIT: Expansion",
+	"description": "Expands AIT duh.",
+	"authors": [
+		"Maketendo"
+	],
+	"contact": {
+		"discord": "https://discord.gg/h28wkJeaGM",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/ait-expansion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.maketendo.ait_expansion.AITExpansion"
+		],
+		"client": [
+			"net.maketendo.ait_expansion.AITExpansionClient"
+		],
+		"fabric-datagen": [
+			"net.maketendo.ait_expansion.AITExpansionDataGenerator"
+		]
+	},
+	"mixins": [
+		"ait-expansion.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
